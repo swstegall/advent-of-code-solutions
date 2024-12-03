@@ -4,10 +4,6 @@ import me.stegall.utils.AOCProblem
 import kotlin.math.abs
 
 class Day1A(val input: String = day1Input) : AOCProblem {
-  init {
-    evaluate()
-  }
-
   private fun createListsFromInput(input: String): Pair<List<String>, List<String>> {
     val list1 = mutableListOf<String>()
     val list2 = mutableListOf<String>()

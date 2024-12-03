@@ -1,11 +1,11 @@
 package me.stegall.day1
 
+import me.stegall.utils.AOCTest
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
-class Day1BTest {
-  @Test
-  fun evaluate_sample() {
+class Day1BTest : AOCTest {
+  override fun evaluate_sample() {
     val sampleInput = """
       3   4
       4   3
@@ -18,8 +18,7 @@ class Day1BTest {
     Assertions.assertEquals("31", day1B.evaluate())
   }
 
-  @Test
-  fun evaluate_actual() {
+  override fun evaluate_actual() {
     val day1B = Day1B()
     println(day1B.evaluate())
   }
